@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    table,td, th{
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <!-- construindo uma tabela, apesar de nao ser muito usado --> 
+    <!-- <table>   exemplo 1 -->
+<!-- tr rable roun e dentro td tabe date= dados da tabela -->
+<table>
+        <tr>
+            <td>Nome</td>
+            <td>Estado</td>
+            <td>Email</td>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>Camaçari</td>
+            <td>alice@gmail.com</td>
+        </tr>
+    </table>
+    <!-- <hr>  exibe uma quebra de linha com marcecão -->
+    <hr>
+    <!-- exemplo 2 tabela  correto usando tr corretamente pois a maioria das tabelas tem cabeçalho ou seja a tag th (table head) table, thead, tr e th-->
+    <table>
+        <thead>
+            <tr>
+                <th>Aluno</th>
+                <th>Media</th>
+            </tr>
+        </thead>
+        <!-- para o corpo da tabela usamos o tbody () -->
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td>8.9</td>
+            </tr>
+        </tbody>
+        <!-- temos tb o rodape da tabela  tag tfoot nas colunas do rodape podemos usar o colspan= que rece o tamanho das colunas agrupadas que queremos usar -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Foi encontrado apenas um registro</td>
+                
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
