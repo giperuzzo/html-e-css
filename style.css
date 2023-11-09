@@ -1,0 +1,34 @@
+/* Estilização global 
+* body, p, h1,  */
+*{
+margin : 0px;
+padding : 0px;
+font: 14px arial;
+color: pink;
+}
+/* TOPO */
+.header {
+background-color: bisque;
+overflow: auto;
+margin: 15px;
+}
+
+header img{
+    float: left;
+}
+
+nav {
+    float: right
+}
+header a {
+    display: inline-block;
+    color:aliceblue;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: 25px;
+
+}
+/* efeito qdo passa o mouse text-decoration, muda cor, fonte diferente,  */
+header a: hover {
+
+}
