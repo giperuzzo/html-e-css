@@ -1,0 +1,83 @@
+/* Estilizção global */
+*{
+    /* margim espaço d borda pra fora */
+    margin:0;
+    /* padding espaço da borda pra dentro */
+    padding: 0;
+    /* definição da fonte de todas as tags  */
+    font: 14 px arial;
+}
+/* topo */
+header{
+    /* cor de fundo da barra de navegação */
+    background-color: gray;
+    /* porém qdo utilizamos o comando float como utilizao abaixo o background some pq ele nao consegue saber o tamanho ( a altura entao temos que florçar ele, se adequar usando um over flow- auto */ 
+    overflow: auto;
+}
+header img{
+    /* float sofre alteração entao o float letft ele alinha a imagem a esquerda e aceita o eleento que esta a direira */
+    float: left;
+    margin: 15px;
+}
+header nav{
+    /* float alinhando o menu de navegação a direita*/
+    float:right;
+}
+header a {
+    /* cor da letra e tirar o sublinhado do link usando o text-decoration:none */
+    /*  qdo usamos a tag a- ela ja entende que fica um ao lado do outro e usamos o display in-line */
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    /* margin-rigth espaçamento a direita */
+    margin-right: 15px;
+    /* comando margin-top espaçamento do container pra dentro  */
+    margin-top: 30px;
+}
+/* definir uma area onde esse conteudo sera exibido tamanho do container */
+.viagens{
+    width: 1300px; 
+    /* pulo do gato o margin 0 auto ele centraliza na horizontal */
+    margin: 0 auto;
+}
+/* por padrão o li usa o display: block - pra ficar um ao lado do outro usamos o display inline-block  */
+.viagens li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+/* diferença de usar class e id ele ´´o id um unico identificador, ja a classe voce pode ter varios elementos*/
+
+/* sessão sobre */
+
+.sobre{
+    width: 1300px; 
+    /* pulo do gato o margin 0 auto ele centraliza na horizontal */
+    margin: 15px auto;
+    overflow: auto;
+}
+.sobre img{
+    float: left;
+    margin-left: 30px;
+}
+/* layout estatico */
+.sobre div {
+    float: right;
+    width: 700px;
+}
+.sobre h1{
+    font-size: 32px;
+}
+.sobre p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 20px;
+    text-indent: 20px;
+}
+/* rodapé */
+footer{
+background-color: rgb(134, 133, 131);
+text-align: center;
+color: white;
+padding: 20px;
+}

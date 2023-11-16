@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelo Agencia de viagens</title>
+    <!-- como lincar o css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fotorama= plug in muitas opçoes  ele estao online mais poderiamos baixar -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<body>
+    <!-- topo -->
+    <header>
+        <img src="imagens/logo.png" alt="Logo Travelo"> 
+         <!--nav barra de navegação e serve para os sites de busca localizar o conteudo dos sites  -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="postagens.html">Postagens</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+<!-- conteudo do site = main qdo os ite de buscar ele procura dentro do  main, principal -->
+<main>
+    <!-- dentro do main criamos as sessões funcionaria usando div mais a boa pratica é usar section e dentro das sessoes usando div é uma questão semantica indicada pela w3school-->
+
+    <!-- sessão banner -->
+    <!-- usando o site fotorama .io -->
+    <!-- banner ja está responsivo -->
+    <section>
+        <div class="fotorama">
+            <img src="imagens/banner1.png" alt="" >
+            <img src="imagens/banner2.png" alt="" >
+            <img src="imagens/banner3.png" alt="" >
+        </div>
+    </section>
+
+    <!-- sessão viagens --> 
+    <!-- criar uma class denro da section para estilizar somenta a sessao viagens -->
+    <section class="viagens">
+        <ul>
+            <!-- viagem 1 a foto, um pequeno titulo, onde é aquela viagem boa pratica pra trabalhar com imagem e testo a tag figure usa o figcaption cria uma legenda pra imagem auxilia tb os sites de buscas a localizar atraves da imagem vinculada a um texto-->
+            <li>
+                <figure>
+                    <img src="imagens/lugares1.png" alt="Destino 1">
+                    <figcaption>São Francisco</figcaption>
+                </figure>
+            </li>
+        <!-- viagem 2 -->
+            <li>
+                <figure>
+                    <img src="imagens/lugares2.png" alt="Destino 2">
+                    <figcaption>Bali</figcaption>
+                </figure>
+            </li>
+        <!-- viagem 3 -->
+            <li>
+                <figure>
+                    <img src="imagens/lugares3.png" alt="Destino 3">
+                    <figcaption>Inglaterra</figcaption>
+                </figure>
+            </li>
+<!-- viagem 4 -->
+            <li>
+                <figure>
+                    <img src="imagens/lugares4.png" alt="Destino 4">
+                    <figcaption>Cancum</figcaption>
+                </figure>
+            </li>
+        <!-- VIAGEM 5 -->
+            <li>
+                <figure>
+                    <img src="imagens/lugares5.png" alt="Destino 5">
+                    <figcaption>Grecia</figcaption>
+                </figure>
+            </li>
+        <!-- viagem 6 -->
+            <li>
+                <figure>
+                    <img src="imagens/lugares6.png" alt="Destino 6">
+                    <figcaption>San Andreas</figcaption>
+                </figure>
+            </li>
+        </ul>
+        
+    </section>
+
+    <!-- sessão sobre nos -->
+    <section class="sobre">
+        <img src="imagens/Sobrenos1.png" alt="Clientes na Torre ">
+        <div>
+            <h1>Sobre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem hic rem, ad magni iusto cumque sequi illum, reiciendis molestias facilis consectetur natus eveniet. Atque non dolorem optio magnam quibusdam enim!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem hic rem, ad magni iusto cumque sequi illum, reiciendis molestias facilis consectetur natus eveniet. Atque non dolorem optio magnam quibusdam enim!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem hic rem, ad magni iusto cumque sequi illum, reiciendis molestias facilis consectetur natus eveniet. Atque non dolorem optio magnam quibusdam enim!</p>
+        </div>
+    </section>
+</main>
+<!-- rodape -->
+<footer>
+    <p>copyright 2023 Gi Peruzzo</p>
+</footer>
+</body>
+</html>
+
+  
